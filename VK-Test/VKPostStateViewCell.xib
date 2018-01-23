@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="37" id="KGk-i7-Jjw" customClass="VKPostStateViewCell" customModule="VK_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="309" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="309" height="36.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9B7-Pl-DoE">
+                        <rect key="frame" x="15" y="0.0" width="41" height="36.5"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                        <state key="normal" title="0" image="likes">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTd-wQ-pZ7">
+                        <rect key="frame" x="156" y="0.0" width="72" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="tIn-x1-bXO"/>
+                        </constraints>
+                        <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-4"/>
+                        <state key="normal" title="0" image="comment">
+                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9B7-Pl-DoE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7Qw-y3-hsx"/>
+                    <constraint firstAttribute="bottom" secondItem="hTd-wQ-pZ7" secondAttribute="bottom" id="KeR-Dx-hia"/>
+                    <constraint firstItem="hTd-wQ-pZ7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="awd-az-thj"/>
+                    <constraint firstAttribute="bottom" secondItem="9B7-Pl-DoE" secondAttribute="bottom" id="n2O-Qv-XzG"/>
+                    <constraint firstItem="9B7-Pl-DoE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="q0S-et-qgm"/>
+                    <constraint firstItem="hTd-wQ-pZ7" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="37" id="ulZ-4P-gT3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="commentsButton" destination="hTd-wQ-pZ7" id="3tm-i3-4FB"/>
+                <outlet property="likesButton" destination="9B7-Pl-DoE" id="u17-24-Vc6"/>
+            </connections>
+            <point key="canvasLocation" x="-9.5" y="59.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="comment" width="25" height="25"/>
+        <image name="likes" width="30" height="30"/>
+    </resources>
+</document>

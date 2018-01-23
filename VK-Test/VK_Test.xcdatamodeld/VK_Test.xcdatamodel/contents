@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13533" systemVersion="17C88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AttachmentMO" representedClassName="AttachmentMO" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProfileMO" inverseName="attachments" inverseEntity="ProfileMO" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PostMO" inverseName="attachments" inverseEntity="PostMO" syncable="YES"/>
+    </entity>
+    <entity name="GroupMO" representedClassName="GroupMO" parentEntity="ProfileMO" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PhotoMO" representedClassName="PhotoMO" parentEntity="AttachmentMO" syncable="YES" codeGenerationType="class">
+        <attribute name="height" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="link604" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="PostMO" representedClassName="PostMO" syncable="YES" codeGenerationType="class">
+        <attribute name="commentsCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="likesCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="attachments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AttachmentMO" inverseName="post" inverseEntity="AttachmentMO" syncable="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProfileMO" inverseName="posts" inverseEntity="ProfileMO" syncable="YES"/>
+    </entity>
+    <entity name="ProfileMO" representedClassName="ProfileMO" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="photo50" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo100" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visibleName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="attachments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AttachmentMO" inverseName="owner" inverseEntity="AttachmentMO" syncable="YES"/>
+        <relationship name="posts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PostMO" inverseName="owner" inverseEntity="PostMO" syncable="YES"/>
+    </entity>
+    <entity name="UserMO" representedClassName="UserMO" parentEntity="ProfileMO" syncable="YES" codeGenerationType="class">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AttachmentMO" positionX="-306" positionY="-279" width="128" height="90"/>
+        <element name="GroupMO" positionX="-396" positionY="93" width="128" height="60"/>
+        <element name="PhotoMO" positionX="-45" positionY="144" width="128" height="105"/>
+        <element name="PostMO" positionX="-398" positionY="-117" width="128" height="165"/>
+        <element name="ProfileMO" positionX="7" positionY="-144" width="128" height="135"/>
+        <element name="UserMO" positionX="-252" positionY="159" width="128" height="75"/>
+    </elements>
+</model>
