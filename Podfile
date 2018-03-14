@@ -7,9 +7,8 @@ target 'VK-Test' do
 
   # Pods for VK-Test
 
-  pod 'Moya'
+  pod 'Moya', '~> 11.0'
   pod 'Kingfisher', '~> 4.0'
-  pod 'Moya-ObjectMapper'
   pod 'PKHUD', '~> 5.0'
   pod 'ESPullToRefresh'
 

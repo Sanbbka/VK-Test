@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0910"
+   LastUpgradeVersion = "0920"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F99A1A87B6B77B8607DEDA943D2FE6B4"
-               BuildableName = "Pods_VK_Test.framework"
-               BlueprintName = "Pods-VK-Test"
+               BlueprintIdentifier = "2AAC70897269009701EA2ADFE2CB50C2"
+               BuildableName = "ESPullToRefresh.framework"
+               BlueprintName = "ESPullToRefresh"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F99A1A87B6B77B8607DEDA943D2FE6B4"
-            BuildableName = "Pods_VK_Test.framework"
-            BlueprintName = "Pods-VK-Test"
+            BlueprintIdentifier = "2AAC70897269009701EA2ADFE2CB50C2"
+            BuildableName = "ESPullToRefresh.framework"
+            BlueprintName = "ESPullToRefresh"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

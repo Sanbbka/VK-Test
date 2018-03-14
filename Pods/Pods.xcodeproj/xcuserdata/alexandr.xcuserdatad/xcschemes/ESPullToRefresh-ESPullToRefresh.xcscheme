@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0910"
+   LastUpgradeVersion = "0920"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D382A7B90B59D72908CC21054785B020"
-               BuildableName = "Moya.framework"
-               BlueprintName = "Moya"
+               BlueprintIdentifier = "D1CFA156DF9AD56A6424A8B5DDDCC42B"
+               BuildableName = "ESPullToRefresh.bundle"
+               BlueprintName = "ESPullToRefresh-ESPullToRefresh"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D382A7B90B59D72908CC21054785B020"
-            BuildableName = "Moya.framework"
-            BlueprintName = "Moya"
+            BlueprintIdentifier = "D1CFA156DF9AD56A6424A8B5DDDCC42B"
+            BuildableName = "ESPullToRefresh.bundle"
+            BlueprintName = "ESPullToRefresh-ESPullToRefresh"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
